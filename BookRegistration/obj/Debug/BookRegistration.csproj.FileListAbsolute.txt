@@ -1,0 +1,10 @@
+C:\Users\vituc\OneDrive\Área de Trabalho\BookRegistration_Project\BookRegistration\BookRegistration\bin\Debug\BookRegistration.exe.config
+C:\Users\vituc\OneDrive\Área de Trabalho\BookRegistration_Project\BookRegistration\BookRegistration\bin\Debug\BookRegistration.exe
+C:\Users\vituc\OneDrive\Área de Trabalho\BookRegistration_Project\BookRegistration\BookRegistration\bin\Debug\BookRegistration.pdb
+C:\Users\vituc\OneDrive\Área de Trabalho\BookRegistration_Project\BookRegistration\BookRegistration\obj\Debug\BookRegistration.csprojAssemblyReference.cache
+C:\Users\vituc\OneDrive\Área de Trabalho\BookRegistration_Project\BookRegistration\BookRegistration\obj\Debug\BookRegistration.Form1.resources
+C:\Users\vituc\OneDrive\Área de Trabalho\BookRegistration_Project\BookRegistration\BookRegistration\obj\Debug\BookRegistration.Properties.Resources.resources
+C:\Users\vituc\OneDrive\Área de Trabalho\BookRegistration_Project\BookRegistration\BookRegistration\obj\Debug\BookRegistration.csproj.GenerateResource.cache
+C:\Users\vituc\OneDrive\Área de Trabalho\BookRegistration_Project\BookRegistration\BookRegistration\obj\Debug\BookRegistration.csproj.CoreCompileInputs.cache
+C:\Users\vituc\OneDrive\Área de Trabalho\BookRegistration_Project\BookRegistration\BookRegistration\obj\Debug\BookRegistration.exe
+C:\Users\vituc\OneDrive\Área de Trabalho\BookRegistration_Project\BookRegistration\BookRegistration\obj\Debug\BookRegistration.pdb

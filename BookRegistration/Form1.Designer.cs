@@ -33,13 +33,20 @@ namespace BookRegistration
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtDate = new System.Windows.Forms.DateTimePicker();
+            this.ComboCategory = new System.Windows.Forms.ComboBox();
+            this.txtIsbn = new System.Windows.Forms.MaskedTextBox();
+            this.checkEnglish = new System.Windows.Forms.CheckBox();
+            this.checkPortuguese = new System.Windows.Forms.CheckBox();
+            this.groupBoxFormat = new System.Windows.Forms.GroupBox();
+            this.radioEbook = new System.Windows.Forms.RadioButton();
+            this.radioPhysical = new System.Windows.Forms.RadioButton();
+            this.List = new System.Windows.Forms.ListBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnClean = new System.Windows.Forms.Button();
+            this.bntDelete = new System.Windows.Forms.Button();
+            this.groupBoxFormat.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -82,86 +89,158 @@ namespace BookRegistration
             this.label4.TabIndex = 3;
             this.label4.Text = "ISBN";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(230, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(438, 35);
-            this.textBox1.TabIndex = 4;
+            this.txtName.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(230, 52);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(438, 35);
+            this.txtName.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // txtDate
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(230, 99);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(438, 35);
-            this.dateTimePicker1.TabIndex = 5;
+            this.txtDate.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.Location = new System.Drawing.Point(230, 99);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(438, 35);
+            this.txtDate.TabIndex = 5;
             // 
-            // comboBox1
+            // ComboCategory
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(230, 146);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(438, 38);
-            this.comboBox1.TabIndex = 6;
+            this.ComboCategory.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboCategory.FormattingEnabled = true;
+            this.ComboCategory.Location = new System.Drawing.Point(230, 146);
+            this.ComboCategory.Name = "ComboCategory";
+            this.ComboCategory.Size = new System.Drawing.Size(438, 38);
+            this.ComboCategory.TabIndex = 6;
             // 
-            // maskedTextBox1
+            // txtIsbn
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(230, 196);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(438, 35);
-            this.maskedTextBox1.TabIndex = 7;
+            this.txtIsbn.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIsbn.Location = new System.Drawing.Point(230, 196);
+            this.txtIsbn.Mask = "000-00-0000";
+            this.txtIsbn.Name = "txtIsbn";
+            this.txtIsbn.Size = new System.Drawing.Size(438, 35);
+            this.txtIsbn.TabIndex = 7;
             // 
-            // checkBox1
+            // checkEnglish
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(235, 271);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkEnglish.AutoSize = true;
+            this.checkEnglish.Location = new System.Drawing.Point(43, 286);
+            this.checkEnglish.Name = "checkEnglish";
+            this.checkEnglish.Size = new System.Drawing.Size(95, 17);
+            this.checkEnglish.TabIndex = 8;
+            this.checkEnglish.Text = "English Edition";
+            this.checkEnglish.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkPortuguese
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(235, 315);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 9;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkPortuguese.AutoSize = true;
+            this.checkPortuguese.Location = new System.Drawing.Point(43, 249);
+            this.checkPortuguese.Name = "checkPortuguese";
+            this.checkPortuguese.Size = new System.Drawing.Size(115, 17);
+            this.checkPortuguese.TabIndex = 9;
+            this.checkPortuguese.Text = "Portuguese Edition";
+            this.checkPortuguese.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // groupBoxFormat
             // 
-            this.groupBox1.Location = new System.Drawing.Point(407, 271);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(267, 118);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBoxFormat.Controls.Add(this.radioEbook);
+            this.groupBoxFormat.Controls.Add(this.radioPhysical);
+            this.groupBoxFormat.Location = new System.Drawing.Point(196, 249);
+            this.groupBoxFormat.Name = "groupBoxFormat";
+            this.groupBoxFormat.Size = new System.Drawing.Size(388, 112);
+            this.groupBoxFormat.TabIndex = 10;
+            this.groupBoxFormat.TabStop = false;
+            this.groupBoxFormat.Text = "Format";
+            // 
+            // radioEbook
+            // 
+            this.radioEbook.AutoSize = true;
+            this.radioEbook.Location = new System.Drawing.Point(32, 77);
+            this.radioEbook.Name = "radioEbook";
+            this.radioEbook.Size = new System.Drawing.Size(56, 17);
+            this.radioEbook.TabIndex = 1;
+            this.radioEbook.TabStop = true;
+            this.radioEbook.Text = "eBook";
+            this.radioEbook.UseVisualStyleBackColor = true;
+            // 
+            // radioPhysical
+            // 
+            this.radioPhysical.AutoSize = true;
+            this.radioPhysical.Location = new System.Drawing.Point(32, 36);
+            this.radioPhysical.Name = "radioPhysical";
+            this.radioPhysical.Size = new System.Drawing.Size(92, 17);
+            this.radioPhysical.TabIndex = 0;
+            this.radioPhysical.TabStop = true;
+            this.radioPhysical.Text = "Physical Book";
+            this.radioPhysical.UseVisualStyleBackColor = true;
+            // 
+            // List
+            // 
+            this.List.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.List.FormattingEnabled = true;
+            this.List.ItemHeight = 23;
+            this.List.Location = new System.Drawing.Point(43, 471);
+            this.List.Name = "List";
+            this.List.Size = new System.Drawing.Size(641, 119);
+            this.List.TabIndex = 11;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Location = new System.Drawing.Point(31, 394);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(195, 43);
+            this.btnRegister.TabIndex = 12;
+            this.btnRegister.Text = "Register / Alter";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            // 
+            // btnClean
+            // 
+            this.btnClean.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClean.Location = new System.Drawing.Point(252, 394);
+            this.btnClean.Name = "btnClean";
+            this.btnClean.Size = new System.Drawing.Size(195, 43);
+            this.btnClean.TabIndex = 13;
+            this.btnClean.Text = "Clean";
+            this.btnClean.UseVisualStyleBackColor = true;
+            // 
+            // bntDelete
+            // 
+            this.bntDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntDelete.Location = new System.Drawing.Point(473, 394);
+            this.bntDelete.Name = "bntDelete";
+            this.bntDelete.Size = new System.Drawing.Size(195, 43);
+            this.bntDelete.TabIndex = 14;
+            this.bntDelete.Text = "Delete";
+            this.bntDelete.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(735, 617);
+            this.Controls.Add(this.bntDelete);
+            this.Controls.Add(this.btnClean);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.List);
+            this.Controls.Add(this.groupBoxFormat);
+            this.Controls.Add(this.checkPortuguese);
+            this.Controls.Add(this.checkEnglish);
+            this.Controls.Add(this.txtIsbn);
+            this.Controls.Add(this.ComboCategory);
+            this.Controls.Add(this.txtDate);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Register";
+            this.groupBoxFormat.ResumeLayout(false);
+            this.groupBoxFormat.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,13 +252,19 @@ namespace BookRegistration
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.DateTimePicker txtDate;
+        private System.Windows.Forms.ComboBox ComboCategory;
+        private System.Windows.Forms.MaskedTextBox txtIsbn;
+        private System.Windows.Forms.CheckBox checkEnglish;
+        private System.Windows.Forms.CheckBox checkPortuguese;
+        private System.Windows.Forms.GroupBox groupBoxFormat;
+        private System.Windows.Forms.RadioButton radioEbook;
+        private System.Windows.Forms.RadioButton radioPhysical;
+        private System.Windows.Forms.ListBox List;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnClean;
+        private System.Windows.Forms.Button bntDelete;
     }
 }
 
