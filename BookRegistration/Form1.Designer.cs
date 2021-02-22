@@ -42,7 +42,7 @@ namespace BookRegistration
             this.groupBoxFormat = new System.Windows.Forms.GroupBox();
             this.radioEbook = new System.Windows.Forms.RadioButton();
             this.radioPhysical = new System.Windows.Forms.RadioButton();
-            this.List = new System.Windows.Forms.ListBox();
+            this.ListView = new System.Windows.Forms.ListBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnClean = new System.Windows.Forms.Button();
             this.bntDelete = new System.Windows.Forms.Button();
@@ -176,15 +176,16 @@ namespace BookRegistration
             this.radioPhysical.Text = "Physical Book";
             this.radioPhysical.UseVisualStyleBackColor = true;
             // 
-            // List
+            // ListView
             // 
-            this.List.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.List.FormattingEnabled = true;
-            this.List.ItemHeight = 23;
-            this.List.Location = new System.Drawing.Point(43, 471);
-            this.List.Name = "List";
-            this.List.Size = new System.Drawing.Size(641, 119);
-            this.List.TabIndex = 11;
+            this.ListView.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListView.FormattingEnabled = true;
+            this.ListView.ItemHeight = 23;
+            this.ListView.Location = new System.Drawing.Point(43, 471);
+            this.ListView.Name = "ListView";
+            this.ListView.Size = new System.Drawing.Size(641, 119);
+            this.ListView.TabIndex = 11;
+            this.ListView.Tag = "";
             // 
             // btnRegister
             // 
@@ -195,6 +196,7 @@ namespace BookRegistration
             this.btnRegister.TabIndex = 12;
             this.btnRegister.Text = "Register / Alter";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnClean
             // 
@@ -205,6 +207,7 @@ namespace BookRegistration
             this.btnClean.TabIndex = 13;
             this.btnClean.Text = "Clean";
             this.btnClean.UseVisualStyleBackColor = true;
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // bntDelete
             // 
@@ -215,6 +218,7 @@ namespace BookRegistration
             this.bntDelete.TabIndex = 14;
             this.bntDelete.Text = "Delete";
             this.bntDelete.UseVisualStyleBackColor = true;
+            this.bntDelete.Click += new System.EventHandler(this.bntDelete_Click);
             // 
             // Form1
             // 
@@ -224,7 +228,7 @@ namespace BookRegistration
             this.Controls.Add(this.bntDelete);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.List);
+            this.Controls.Add(this.ListView);
             this.Controls.Add(this.groupBoxFormat);
             this.Controls.Add(this.checkPortuguese);
             this.Controls.Add(this.checkEnglish);
@@ -261,7 +265,7 @@ namespace BookRegistration
         private System.Windows.Forms.GroupBox groupBoxFormat;
         private System.Windows.Forms.RadioButton radioEbook;
         private System.Windows.Forms.RadioButton radioPhysical;
-        private System.Windows.Forms.ListBox List;
+        private System.Windows.Forms.ListBox ListView;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnClean;
         private System.Windows.Forms.Button bntDelete;
