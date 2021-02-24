@@ -31,7 +31,58 @@ namespace BookRegistration
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            int index = -1;
 
+            foreach (Person person in people)
+            {
+                if (person.Name == txtName.Text)
+                {
+                    index = people.IndexOf(person);
+                }             
+            }
+            if (txtName.Text == "")
+            {
+                MessageBox.Show("Fill in the name area.");
+                txtName.Focus();
+                return;
+            }
+            if (txtDate.Text == "")
+            {
+                MessageBox.Show("Fill in the date area.");
+                txtDate.Focus();
+                return;
+            }
+            string format;
+
+            if (radioPhysical.Checked)
+            {
+                format = "Physical";
+            }
+            else
+            {
+                format = "eBook";
+            }
+            Person p = new Person();
+            p.Name = txtName.Text;
+            p.ReleaseDate = txtDate.Text;
+            p.Category = ComboCategory.SelectedItem.ToString();
+            p.Isbn = txtIsbn.Text;
+            p.PortugueseLanguage = checkPortuguese.Checked;
+            p.EnglishLanguage = checkEnglish.Checked;
+            p.Format = format;
+
+            if(index < 0)
+            {
+                people.Add(p);
+            }
+            else
+            {
+                people[index] = p;
+            }
+
+            btnClean_Click(btnClean, EventArgs.Empty);
+
+            List();
         }
 
         private void btnClean_Click(object sender, EventArgs e)

@@ -12,8 +12,9 @@ namespace BookRegistration
         public string ReleaseDate { get; set; }
         public string Category { get; set; }
         public string Isbn { get; set; }
+        public string Format { get; set; }
         public bool PortugueseLanguage { get; set; }
         public bool EnglishLanguage { get; set; }
-        public char Format { get; set; }
+
     }
 }

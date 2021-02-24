@@ -161,13 +161,13 @@ namespace BookRegistration
             this.radioEbook.Name = "radioEbook";
             this.radioEbook.Size = new System.Drawing.Size(56, 17);
             this.radioEbook.TabIndex = 1;
-            this.radioEbook.TabStop = true;
             this.radioEbook.Text = "eBook";
             this.radioEbook.UseVisualStyleBackColor = true;
             // 
             // radioPhysical
             // 
             this.radioPhysical.AutoSize = true;
+            this.radioPhysical.Checked = true;
             this.radioPhysical.Location = new System.Drawing.Point(32, 36);
             this.radioPhysical.Name = "radioPhysical";
             this.radioPhysical.Size = new System.Drawing.Size(92, 17);
