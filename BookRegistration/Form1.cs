@@ -27,6 +27,8 @@ namespace BookRegistration
             ComboCategory.Items.Add("Romance");
             ComboCategory.Items.Add("Technology");
 
+            ComboCategory.SelectedIndex = 0;
+
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -87,7 +89,15 @@ namespace BookRegistration
 
         private void btnClean_Click(object sender, EventArgs e)
         {
-
+            txtName.Text = "";
+            txtDate.Text = "";
+            ComboCategory.SelectedIndex = 0;
+            txtIsbn.Text = "";
+            checkPortuguese.Checked = false;
+            checkEnglish.Checked = false;
+            radioPhysical.Checked = true;
+            radioPhysical.Checked = false;
+            txtName.Focus();
         }
 
         private void bntDelete_Click(object sender, EventArgs e)
