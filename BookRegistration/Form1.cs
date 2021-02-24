@@ -48,10 +48,10 @@ namespace BookRegistration
                 txtName.Focus();
                 return;
             }
-            if (txtDate.Text == "")
+            if (txtIsbn.Text == "   -  -")
             {
-                MessageBox.Show("Fill in the date area.");
-                txtDate.Focus();
+                MessageBox.Show("Fill in the isbn area.");
+                txtIsbn.Focus();
                 return;
             }
             string format;
