@@ -186,6 +186,7 @@ namespace BookRegistration
             this.ListView.Size = new System.Drawing.Size(641, 119);
             this.ListView.TabIndex = 11;
             this.ListView.Tag = "";
+            this.ListView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ListView_MouseDoubleClick);
             // 
             // btnRegister
             // 

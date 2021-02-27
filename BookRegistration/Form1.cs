@@ -124,5 +124,12 @@ namespace BookRegistration
                 ListView.Items.Add(p.Name);
             }
         }
+
+        private void ListView_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int index = ListView.SelectedIndex;
+            Person p = people[index];
+
+        }
     }
 }
