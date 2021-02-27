@@ -102,6 +102,17 @@ namespace BookRegistration
 
         private void bntDelete_Click(object sender, EventArgs e)
         {
+            int index = ListView.SelectedIndex;
+            if (index == -1)
+            {
+                MessageBox.Show("Select a item to delete.");
+            }
+            else
+            {
+                people.RemoveAt(index);
+            }         
+
+            List();
 
         }
         private void List()
