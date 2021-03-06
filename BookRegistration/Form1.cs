@@ -130,6 +130,15 @@ namespace BookRegistration
             int index = ListView.SelectedIndex;
             Person p = people[index];
 
+            txtName.Text = p.Name;
+            txtDate.Text = p.ReleaseDate;
+            ComboCategory.SelectedItem = p.Category;
+            txtIsbn.Text = p.Isbn;
+            checkPortuguese.Checked = p.PortugueseLanguage;
+            checkEnglish.Checked = p.EnglishLanguage;
+
+
+
         }
     }
 }
