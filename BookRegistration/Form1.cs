@@ -137,8 +137,15 @@ namespace BookRegistration
             checkPortuguese.Checked = p.PortugueseLanguage;
             checkEnglish.Checked = p.EnglishLanguage;
 
-
-
+            switch (p.Format)
+            {
+                case "Physical Book":
+                    radioPhysical.Checked = true;
+                    break;
+                case "Ebook":
+                    radioEbook.Checked = true;
+                    break;
+            }
         }
     }
 }
